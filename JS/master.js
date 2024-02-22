@@ -144,10 +144,10 @@ let landingPage = document.querySelector(".landing-page");
 //get array of imgs
 
 let imgsArray = [
-  "../images/overlay1.jpg",
-  "../images/overlay2.jpg",
-  "../images/overlay3.jpg",
-  "../images/overlay4.jpg",
+  "overlay1.jpg",
+  "overlay2.jpg",
+  "overlay3.jpg",
+  "overlay4.jpg",
 ];
 
 //change background landing page
