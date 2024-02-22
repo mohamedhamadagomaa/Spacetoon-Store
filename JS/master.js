@@ -144,10 +144,10 @@ let landingPage = document.querySelector(".landing-page");
 //get array of imgs
 
 let imgsArray = [
-  "overlay1.jpg",
-  "overlay2.jpg",
-  "overlay3.jpg",
-  "overlay4.jpg",
+  ".../images/overlay1.jpg",
+  ".../images/overlay2.jpg",
+  ".../images/overlay3.jpg",
+  ".../images/overlay4.jpg",
 ];
 
 //change background landing page
@@ -156,7 +156,7 @@ function randomBGfun() {
   if (optionbackground === true) {
     backgroundInterval = setInterval(() => {
       let randomNum = Math.floor(Math.random() * imgsArray.length);
-      landingPage.style.backgroundImage = `url("..images/overlay${
+      landingPage.style.backgroundImage = `url(".../images/overlay${
         randomNum + 1
       }.jpg")`;
     }, 1000);
