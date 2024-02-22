@@ -156,7 +156,7 @@ function randomBGfun() {
   if (optionbackground === true) {
     backgroundInterval = setInterval(() => {
       let randomNum = Math.floor(Math.random() * imgsArray.length);
-      landingPage.style.backgroundImage = `url(".../images/overlay${
+      landingPage.style.backgroundImage = `url("../images/overlay${
         randomNum + 1
       }.jpg")`;
     }, 1000);
