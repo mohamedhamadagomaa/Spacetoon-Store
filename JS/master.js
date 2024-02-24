@@ -59,7 +59,8 @@ if (backgroundLocalitem !== null) {
 let settingBtn = document.querySelector(".gear");
 let settingBox = document.querySelector(".setting-box");
 let settingLink = document.querySelector(".links .setting-link");
-console.log(settingLink);
+
+// console.log(settingLink);
 settingBtn.onclick = function () {
   this.classList.toggle("fa-spin");
   settingBox.classList.toggle("open");
