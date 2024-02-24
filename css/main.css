@@ -360,6 +360,83 @@ hr {
   color: var(--main-color);
 }
 
+/* end skills section */
+
+/* start gallery section  */
+.gallery {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.gallery h2 {
+  color: var(--main-color);
+  text-align: center;
+  margin: 0 0 50px;
+  font-size: 30px;
+  /* font-weight: bold; */
+}
+.gallery .img-box {
+  text-align: center;
+}
+.gallery .img-box img {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  padding: 3px;
+  background-color: #f6f6f6;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+.popup-overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.popup-overlay .popup-box {
+  position: fixed;
+  padding: 0 20px 20px 20px;
+  background-color: #fff;
+  z-index: 1001;
+  border: 1px solid #ccc;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.popup-overlay .popup-box h3 {
+  padding: 0;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.popup-overlay .popup-box img {
+  max-width: 100%;
+}
+/* close btn  */
+.popup-overlay .popup-box span {
+  font-weight: bold;
+  border: 2px solid transparent;
+
+  position: absolute;
+  top: -40px;
+  color: #fff;
+  font-family: Arial, Tahoma;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  right: -40px;
+  border-radius: 30%;
+  cursor: pointer;
+  background-color: var(--main-color);
+}
+
+/* end gallery section  */
+
 /* start contacts section */
 .contacts {
   background-color: #eee;
