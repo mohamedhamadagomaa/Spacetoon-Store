@@ -60,6 +60,11 @@ let settingBtn = document.querySelector(".gear");
 let settingBox = document.querySelector(".setting-box");
 let settingLink = document.querySelector(".links .setting-link");
 
+// window.onclick = function () {
+
+//     settingBox.classList.toggle("open");
+
+// };
 // console.log(settingLink);
 settingBtn.onclick = function () {
   this.classList.toggle("fa-spin");
@@ -167,4 +172,31 @@ function randomBGfun() {
 }
 randomBGfun();
 
-//
+// select skilss item
+let ourskills = document.querySelector(".skills");
+
+window.onscroll = function () {
+  let skillsoffsetTop = ourskills.offsetTop;
+
+  let skillsOffsetHeight = ourskills.offsetHeight;
+
+  let windowHeight = this.innerHeight;
+
+  let windowScrollTop = this.scrollY;
+
+  if (windowScrollTop > skillsoffsetTop + skillsOffsetHeight - windowHeight) {
+    let allSkills = document.querySelectorAll(
+      ".skill-box .skill-progress span"
+    );
+    let allSkillsperc = document.querySelectorAll(
+      ".skill-box .skill-progress span"
+    );
+
+    allSkills.forEach((skill) => {
+      skill.style.width = skill.dataset.prog;
+    });
+    allSkillsperc.forEach((skill) => {
+      skill.innerHTML = skill.dataset.prog;
+    });
+  }
+};

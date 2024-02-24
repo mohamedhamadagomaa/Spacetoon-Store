@@ -1,7 +1,6 @@
 :root {
   --main-color: #009688;
   --second-color: burlywood;
-  --prog-rate: 100%;
 }
 * {
   box-sizing: border-box;
@@ -326,6 +325,7 @@ hr {
   background-color: white;
   display: flex;
   padding: 15px;
+  /* position: relative; */
   margin-bottom: 15px;
 }
 .skill-box .skill-name {
@@ -335,29 +335,32 @@ hr {
   text-align: left;
   color: #333;
 }
-.skill-box span {
+.skill-box .skill-progress {
+  position: relative;
+  width: 100%;
+  left: 0;
+}
+.skill-box .skill-progress span {
+  position: absolute;
   background-color: var(--main-color);
   height: 30px;
-  width: var(--prog-rate);
-  border-radius: 8px;
-  position: relative;
-}
-.skill-box span::after {
-  content: "100%";
-  position: absolute;
-  color: var(--second-color);
+  width: 0%;
+  text-align: center;
+  line-height: 30px;
+  color: white;
   font-weight: bold;
-  font-size: 20px;
-  right: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  transition: 0.6s;
 }
 
+/* end skills section  */
 .skills .info-box {
   text-align: center;
   padding-block: 20px;
   color: var(--main-color);
 }
+
+/* start contacts section */
 .contacts {
   background-color: #eee;
   padding: 20px;
